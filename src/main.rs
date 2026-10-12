@@ -9,16 +9,16 @@ fn main() {
 
 async fn run() {
     // 1. create 1_000_000 elements for vector summation
-    const ELEMENT_COUNT: usize = 1_000_000;
+    const ELEMENT_COUNT: usize = 15_000_000;
     // let mut a_data = vec![1.0f32; ELEMENT_COUNT];
     // let mut b_data = vec![2.0f32; ELEMENT_COUNT];
 
-    let mut a_data = (0..1000000)
+    let mut a_data = (0..ELEMENT_COUNT)
         .into_iter()
         .map(|v| v as f32)
         .collect::<Vec<f32>>();
 
-    let mut b_data = (0..1000000)
+    let mut b_data = (0..ELEMENT_COUNT)
         .into_iter()
         .rev()
         .map(|v| v as f32)
