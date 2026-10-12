@@ -1,0 +1,8 @@
+[package]
+name = "wgpu_trial"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pollster = "1.0.1"
+wgpu = "30.0.1"
